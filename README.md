@@ -21,7 +21,7 @@
 ## 🔄 系統架構與運作流程
 - 系統支援手動選單操作與 Crontab 排程自動化執行兩種模式。
 - 所有監控結果將即時顯示於終端機，並自動壓縮儲存至日誌目錄中。  
-
+```
                     +-----------------------+
                     |   系統管理員 / 使用者   |
                     +-----------+-----------+
@@ -53,7 +53,7 @@
                 |    check_services_log /       |
                 |  (自動生成 .log 並 gzip 歸檔)  |
                 +-------------------------------+
-
+```
 ## 💻 核心功能與腳本說明
 1. 管理員選單介面 (admin_tool.sh)
    - 提供 CLI 表單選單，整合所有檢查項目，方便管理人員一鍵選擇與執行。
@@ -91,13 +91,15 @@ git clone https://github.com/your-username/linux-health-security-monitor.git
 cd linux-health-security-monitor
 ```
 
-3. 設定腳本執行權限：
-
+2. 設定腳本執行權限：
+```
 Bash
 chmod +x *.sh
-
+```
 3. 執行管理介面
+```
 Bash
 ./admin_tool.sh
+```
 
 
