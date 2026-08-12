@@ -85,10 +85,9 @@
 
 安裝與執行權限
 1. 複製專案到本地端：
-‵‵‵
-Bash
+‵‵‵Bash
 git clone https://github.com/your-username/linux-health-security-monitor.git
-cd linux-health-security-monitor
+\cd linux-health-security-monitor
 ‵‵‵
 
 3. 設定腳本執行權限：
