@@ -54,6 +54,8 @@
                 +-------------------------------+
 ```
 ## 💻 核心功能與腳本說明
+<img width="405" height="390" alt="image" src="https://github.com/user-attachments/assets/23173020-83f9-443a-85ae-fd498396692f" />
+
 1. 管理員選單介面 (admin_tool.sh)
    - 提供 CLI 表單選單，整合所有檢查項目，方便管理人員一鍵選擇與執行。
 
