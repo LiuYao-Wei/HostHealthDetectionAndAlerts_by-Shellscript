@@ -8,7 +8,7 @@
 - [系統架構與運作流程](#-系統架構與運作流程)
 - [核心功能與腳本說明](#-核心功能與腳本說明)
 - [快速開始](#-快速開始)
-- 自動化監控 (Crontab 配置)
+- [自動化監控 (Crontab 配置)](#-自動化監控)
 
 
 ## 🎯 研究目的
@@ -89,7 +89,6 @@ Bash
 git clone https://github.com/your-username/linux-health-security-monitor.git
 cd linux-health-security-monitor
 ```
-
 2. 設定腳本執行權限：
 ```
 Bash
@@ -101,4 +100,17 @@ Bash
 ./admin_tool.sh
 ```
 
+## ⏰ 自動化監控
+為實現無人化自動監控，可使用 crontab -e 配置定期執行任務：  
+1. 每日定期執行網路與異常服務掃描
+```
+0 0 * * * /bin/bash /home/kali/networkCheck.sh
+0 0 * * * /bin/bash /home/kali/abnormalDetect.sh
+```
+2. 每 10 分鐘定期監控資源狀態
+```
+*/10 * * * * /bin/bash /home/kali/cpuCheck.sh
+*/10 * * * * /bin/bash /home/kali/memoryCheck.sh
+*/10 * * * * /bin/bash /home/kali/spaceCheck.sh
+```
 
